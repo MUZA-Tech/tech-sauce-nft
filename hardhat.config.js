@@ -14,6 +14,10 @@ module.exports = {
   networks: {
     hardhat: {
     },
+    matic: {
+      url: 'https://polygon-rpc.com',
+      accounts: ['']
+    },
     mumbai: {
       url: 'https://polygon-mumbai.infura.io/v3/4458cf4d1689497b9a38b1d6bbf05e78',
       accounts: [
@@ -22,7 +26,8 @@ module.exports = {
   },
   etherscan: {
     apiKey: {
-      polygonMumbai: 'WXTE5DITDMINM21Y6BWD7282IFRAWQMCAF'
+      polygonMumbai: 'WXTE5DITDMINM21Y6BWD7282IFRAWQMCAF',
+      polygon: 'WXTE5DITDMINM21Y6BWD7282IFRAWQMCAF'
     }
   }
 };

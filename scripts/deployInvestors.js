@@ -8,12 +8,12 @@ const hre = require("hardhat");
 
 async function main() {
 
-  const investorMajor = await hre.ethers.deployContract("InvestorMajor");
+  const Innovators = await hre.ethers.deployContract("Innovators");
 
-  await investorMajor.waitForDeployment();
+  await Innovators.waitForDeployment();
 
   console.log(
-    `investorMajor address: ${investorMajor.target}`
+    `Innovators address: ${Innovators.target}`
   );
 }
 
